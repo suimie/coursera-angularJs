@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app='CheckTextBoxApp'>
+  <head>
+    <meta charset="utf-8">
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+    <style> body { font-size: 1.2em; } </style>
+    <title>Check If Too Much</title>
+  </head>
+  <body>
+    <h1>Check If Too Much</h1>
+    <div ng-controller='CheckTextBoxController'>
+      Enter Items(We do NOT consider empty item, ie.,,, as item towards to the count.) :
+      <input type="text" ng-model="items" placeholder="Apple, Sandwich">
+      <button ng-click="checkItems()">Check If Too Much</button>
+      <div>{{msg}}</div>
+    </div>
+  </body>
+</html>
